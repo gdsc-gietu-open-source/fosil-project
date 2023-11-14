@@ -1,0 +1,52 @@
+---
+title: "Registered reports"
+author: 
+  - name: Joseph V. Casillas
+    url: https://www.jvcasillas.com
+    affiliation: Rutgers University
+    affiliation-url: www.rutgers.edu
+citation: 
+  url: https://FOSIL-project.github.io/registered-reports/index.html
+date: "2023-03-21"
+categories: [open science, registered reports, transparency]
+image: "registered_reports_wug.png"
+description: |
+  A new model for publishing scientific research
+---
+
+```{r}
+#| label: lang-opts
+#| results: 'asis'
+#| echo: false
+
+# Source dropdown function
+source(here::here("scripts", "01_language_dropdown.R"))
+
+# Generate button
+print_list(
+  butt_text = "Language", 
+  dir = "registered-reports"
+  )
+```
+
+<br>
+
+The reproducibility crisis has drawn attention to the shortcomings of the traditional model of publishing scientific research. In the current model, researchers generate hypotheses, design studies, collect data, analyze data, interpret results, and submit their findings for publication. However, this model has been criticized for lending itself to questionable research practices (QRPs), such as p-hacking, harking, and publication bias.
+
+## Attempts at reform
+
+To address these issues, researchers have attempted various reforms, such as meta-analysis and pre-registration. Meta-analysis is a statistical technique that combines the results of multiple studies to increase the power of analysis. Pre-registration involves publicly registering a study's design and methods before collecting data, to mitigate QRPs.
+
+## A New model
+
+Registered Reports (RRs) are a new model that combines pre-registration with peer review. In this model, researchers submit a detailed proposal of their study, including their hypotheses, methods, and analyses, for review before data collection. If the proposal is accepted, the study is guaranteed publication, regardless of the results. This incentivizes rigorous methodology and reduces QRPs, as researchers cannot manipulate their analyses to obtain significant results.
+
+RRs were first introduced in 2013 by the Center for Open Science (COS), and have since been adopted by many journals across various fields, including psychology, neuroscience, and medicine.
+
+Pre-registration is often confused with RR, but they differ in that pre-registration is a separate step that occurs before the traditional publishing pipeline, whereas RR is integrated into the publishing process. RRs cannot solve all the problems with the current model, but they can help reduce QRPs and increase transparency in scientific research.
+
+## Current state, future
+
+RRs are gaining popularity, but some fields, such as linguistics, have been slow to adopt them. RRs may particularly benefit early-career researchers (ECRs), who can use them to increase their chances of publication and build a reputation for rigor. However, more senior researchers may be resistant to change and may need to be convinced of the benefits of RRs for the field as a whole.
+
+In conclusion, Registered Reports represent a promising new model for publishing scientific research that can help reduce QRPs and increase transparency. As more journals adopt RRs, the scientific community can move towards a more rigorous and trustworthy publishing model.

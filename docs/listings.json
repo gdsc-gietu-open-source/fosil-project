@@ -1,0 +1,15 @@
+[
+  {
+    "listing": "/tutorials.html",
+    "items": [
+      "/posts/preregistration/index.html",
+      "/posts/reproducible-code-projects/index.html",
+      "/posts/positionality-statements/index.html",
+      "/posts/registered-reports/index.html",
+      "/posts/preprints/index.html",
+      "/posts/open-data/index.html",
+      "/posts/what-is-open-science/index.html",
+      "/posts/literate-programming/index.html"
+    ]
+  }
+]

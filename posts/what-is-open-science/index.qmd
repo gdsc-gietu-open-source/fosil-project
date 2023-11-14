@@ -1,0 +1,115 @@
+---
+title: "What is open science?"
+author: 
+  - name: Joseph V. Casillas
+    url: https://www.jvcasillas.com
+    affiliation: Rutgers University
+    affiliation-url: www.rutgers.edu
+citation: 
+  url: https://FOSIL-project.github.io/what-is-open-science/index.html
+date: 2023-02-21
+categories: [info]
+image: "open_science_wug.png"
+description: |
+  A quick primer on Open Science and reproducible research.
+---
+
+```{r}
+#| label: lang-opts
+#| results: 'asis'
+#| echo: false
+
+# Source dropdown function
+source(here::here("scripts", "01_language_dropdown.R"))
+
+# Generate button
+print_list(
+  butt_text = "Language", 
+  dir = "what-is-open-science"
+  )
+```
+
+```{r}
+#| label: setup
+#| echo: false
+#| message: false
+library("here")
+library("fs")
+library("dplyr")
+library("tidyr")
+library("stringr")
+```
+
+
+</br>
+
+What is open science?
+@parsons2022community provide the following definition: 
+
+> An umbrella term reflecting the idea that scientific knowledge of all kinds, where appropriate, should be openly accessible, transparent, rigorous, reproducible, replicable, accumulative, and inclusive, all which are considered fundamental features of the scientific endeavour. Open science consists of principles and behaviors that promote transparent, credible, reproducible, and accessible science. Open science has six major aspects: open data, open methodology, open source, open access, open peer review, and open educational resources.
+
+That sounds wonderful, right? 
+But you might be asking yourself *why* the push for Open Science?
+It may come as a surprise to some, but the open, transparent research practices described by @parsons2022community have not been the norm in scholarly research. 
+
+To properly contextualize the need for Open Science, we have to go back to the early 2010's. 
+Around this time, several fields of research embarked on large-scale replication projects to scrutinize some of their major findings.
+One example of these projects took place in psychology. 
+This particular project tested whether they could replicate 100 influential findings [@open2015estimating].
+They found the approximately 53% of the findings did not replicate. 
+This project inspired similar large-scale replication projects in other fields, yielding similar results in economics [@camerer2016evaluating], social sciences [@camerer2018evaluating], and cancer research [@errington2021investigating]. 
+These alarming findings are now referred to as the replication (or reproducibility) crisis. 
+Researchers have pointed to questionable research practices (QRPs), p-hacking, HARKing, small sample sizes, poor theory, lack of transparency, etc. as factors that ultimately led to the replication crisis, though it is likely that other factors are at play. 
+
+<aside>
+Take a second to consider your field of study. 
+How many important findings do you think would replicate? 
+If you were to replicate 100 of the most influential findings, how many would need to replicate for you to have confidence in your field?
+</aside>
+
+In the aftermath of the replication crisis we have seen a push for increased transparency and reproducible methodology to help mitigate the effects of questionable research practices. 
+The resulting methodological framework and associated techniques have reshaped research methods in psychology and have slowly but surely made their way into adjacent fields. 
+This website is dedicated to making open science practices understandable and accessible to researchers in the speech sciences from all backgrounds and at every stage, from students/early career researchers to senior researchers. 
+
+To this end, we have highlighted 7 areas in which speech researchers can engage in Open Science: 
+
+```{r}
+#| label: generate-list
+#| results: 'asis'
+#| echo: false
+dir_ls(here("posts")) |>
+  as_tibble() |> 
+  slice(2:8) |>
+  mutate(
+    value = str_remove_all(value, here("posts/")), 
+    value = str_replace(value, "code-projects", "code/projects"), 
+    value = str_replace_all(value, "-", " "), 
+    value = str_to_sentence(value), 
+    value = glue::glue("- {value}")
+  ) |>
+  pull(value)
+  
+```
+
+Throughout this website you will find tutorials designed to get you up and running in each of these areas so that you can engage in Open Science practices.  
+
+See @fig-open-science-wiki
+
+```{r}
+#| label: fig-open-science-wiki
+#| echo: false
+#| fig.cap: This is a caption
+knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Osc2021-unesco-open-science-no-gray.png/640px-Osc2021-unesco-open-science-no-gray.png")
+```
+
+
+<!--
+Open science is an approach to research that emphasizes making research transparent, accessible, and collaborative. It involves sharing research materials, data, and findings openly with others, and using open-source software and tools to enable collaboration and replication.
+
+The goal of open science is to increase the quality and impact of research by allowing others to scrutinize and build upon research findings. This helps to ensure that research is trustworthy and reproducible, and that it benefits society as a whole.
+
+Open science also promotes diversity and inclusivity in research, by making research more accessible to a wider range of people and enabling participation from different perspectives.
+
+Overall, open science is a movement that seeks to make research more transparent, inclusive, and collaborative, with the ultimate goal of advancing knowledge and benefiting society as a whole.
+
+--> 

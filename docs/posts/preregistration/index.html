@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.299">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="author" content="Jiawei Shao">
+<meta name="author" content="Adrija Gadamsetty">
+<meta name="author" content="Katherine Taveras">
+<meta name="dcterms.date" content="2023-11-21">
+<meta name="description" content="All about preregistration">
+<title>Fostering Open Science in Linguistics - Preregistration</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script><link rel="stylesheet" href="../../styles.css">
+</head>
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg navbar-dark "><div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Fostering Open Science in Linguistics</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+<li class="nav-item">
+    <a class="nav-link" href="../../about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../tutorials.html" rel="" target="">
+ <span class="menu-text">Tutorials</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+<div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav></header><!-- content --><header id="title-block-header" class="quarto-title-block default page-columns page-full"><div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <div class="quarto-title-block"><div><h1 class="title">Preregistration</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+                  <div>
+        <div class="description">
+          <p>All about preregistration</p>
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">open science</div>
+                <div class="quarto-category">reregistration</div>
+              </div>
+                  </div>
+  </div>
+    
+  <div class="quarto-title-meta-author">
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-heading">Affiliation</div>
+    
+      <div class="quarto-title-meta-contents">
+      <p class="author"><a href="https://span-port.rutgers.edu/people/ph-d-students-tas/graduate-students/129-current-students-phd-in-bilingualismsla/1033-jiawei-shao">Jiawei Shao</a> </p>
+    </div>
+      <div class="quarto-title-meta-contents">
+          <p class="affiliation">
+              <a href="www.rutgers.edu">
+              Rutgers University
+              </a>
+            </p>
+        </div>
+        <div class="quarto-title-meta-contents">
+      <p class="author">Adrija Gadamsetty </p>
+    </div>
+      <div class="quarto-title-meta-contents">
+          <p class="affiliation">
+              <a href="www.rutgers.edu">
+              Rutgers University
+              </a>
+            </p>
+        </div>
+        <div class="quarto-title-meta-contents">
+      <p class="author">Katherine Taveras </p>
+    </div>
+      <div class="quarto-title-meta-contents">
+          <p class="affiliation">
+              <a href="www.rutgers.edu">
+              Rutgers University
+              </a>
+            </p>
+        </div>
+      </div>
+
+  <div class="quarto-title-meta">
+
+        
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">11/21/23</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
+   
+  <ul>
+<li><a href="#what-is-preregistration" id="toc-what-is-preregistration" class="nav-link active" data-scroll-target="#what-is-preregistration">What is preregistration?</a></li>
+  <li><a href="#who-can-benefit-from-preregistration" id="toc-who-can-benefit-from-preregistration" class="nav-link" data-scroll-target="#who-can-benefit-from-preregistration">Who can benefit from preregistration?</a></li>
+  <li><a href="#why-preregister-your-study" id="toc-why-preregister-your-study" class="nav-link" data-scroll-target="#why-preregister-your-study">Why preregister your study?</a></li>
+  <li>
+<a href="#what-should-you-pregister" id="toc-what-should-you-pregister" class="nav-link" data-scroll-target="#what-should-you-pregister">What should you pregister?</a>
+  <ul class="collapse">
+<li><a href="#level-of-details" id="toc-level-of-details" class="nav-link" data-scroll-target="#level-of-details">Level of details</a></li>
+  </ul>
+</li>
+  <li><a href="#how-to-preregister-your-study" id="toc-how-to-preregister-your-study" class="nav-link" data-scroll-target="#how-to-preregister-your-study">How to preregister your study</a></li>
+  </ul></nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content"><div class="dropdown">
+<button class="btn-sm btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> Language </button>
+<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+<li>
+<a class="dropdown-item" href="../../posts/what-is-open-science/index.html">English</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../posts/what-is-open-science/index_cp.html">官話</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../posts/what-is-open-science/index_fr.html">Français</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../posts/what-is-open-science/index_ro.html">Română</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../posts/what-is-open-science/index_sp.html">Español</a>
+</li>
+</ul>
+</div>
+<section id="what-is-preregistration" class="level2"><h2 class="anchored" data-anchor-id="what-is-preregistration">What is preregistration?</h2>
+<p>A preregistration is a timestamped document that includes details about a study, such as research questions, hypotheses, methods, and analytic strategies. Preregistration differs from other open science practices, such as registered reports and preprints, in that it is written prior to data collection and is not peer reviewed. The amount of detail included in a preregistration can vary. In the simplest case, a preregistration can comprise merely a hypothesis or perhaps a brief description of the methods. On the other extreme, a detailed preregistration can include code, power analyses, participant exclusion criteria, etc., in addition to the information described in the simple case. In the following sections, we will provide more information about the different components that can be included in a preregistration with a specific focus on how preregistration can benefit linguistic research. More concretely, we will cover the <em>who</em>, <em>why</em>, <em>what</em>, and <em>how</em> for preregistering your study in linguistics.</p>
+</section><section id="who-can-benefit-from-preregistration" class="level2"><h2 class="anchored" data-anchor-id="who-can-benefit-from-preregistration">Who can benefit from preregistration?</h2>
+<p>Everybody! Preregistration is an important practice for conducting open science and anyone interested in reducing the likelihood of committing questionable research practices (QRPs) and making their research more transparent should consider using them. This tutorial focuses specifically on preregistration for researchers in any area of linguistics.</p>
+</section><section id="why-preregister-your-study" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="why-preregister-your-study">Why preregister your study?</h2>
+<p>Researchers have to make critical choices throughout the process of designing and conducting research. To give a concrete example, consider a phonotician interested in investigating lexical stress. In this case, the researcher would likely focus on some acoustic correlates associated with stress, such as pitch, duration, and/or intensity. Aside from choosing which acoustic correlate(s) to measure, she would also need to specify the domain in which these measurements are taken. Is it the nucleus of the stressed/unstressed syllables? Or perhaps the entire syllable? Where exactly is the measurement taken? The mid-point, perhaps? Or maybe an average over the entire syllable? All of these choices can have crucial consequences on downstream analyses. This type of inherent flexibility is referred to as researcher degrees of freedom. The purpose of preregisteration is to document all of these critical aspects of the study. Furthermore, preregistration can deter individuals from QRPs, such as HARKing or p-hacking, by requiring them to explicitly state critical decisions in the research pipeline prior to ever collecting data.</p>
+<aside>
+For more information about QRPs and how they relate to the replicability crisis see <a href="https://fosil-project.github.io/posts/what-is-open-science/">What is open science?</a>.
+</aside><p>There are many additional benefits to preregistering studies. Preregistration can serve as proof one is engaging in confirmatory data analysis (as opposed to exploratory data analysis), as it establishes a timeline of decisions made before and after data collection. Moreover, by including a greater level of detail in the preregistration, the researcher is forced to think about aspects of their study that might typically be left for a later stage, e.g., statistical analyses. This necessarily requires the researcher to invest more time upfront, but often has the benefit of increasing the likelihood of discovering critical errors in the study design.</p>
+</section><section id="what-should-you-pregister" class="level2"><h2 class="anchored" data-anchor-id="what-should-you-pregister">What should you pregister?</h2>
+<p>In short, you can preregister anything that you think warrants being timestamped prior to conducting your study. What exactly this entails will vary widely depending on your area of linguistics and the type of study you are conducting. To illustrate, we’ll consider a concrete example.</p>
+<p>Let’s imagine you are a psycholinguist preparing an experiment using self-paced reading. You might want to focus on the research questions, hypotheses, and critical details related to the methodology, such as who the participants are, how you plan to recruit them, how many you plan to recruit, etc. You also might consider explaining what the critical variables are that you will manipulate with your design, what transformations you plan to perform on the data, and what modeling strategies you will use for statistical inferences. All of these decisions, while important, might not be applicaple in every situation. To summarize, the type of information included in a preregistration will likely be related to one of the following:</p>
+<ol type="1">
+<li>RQ/Hypotheses</li>
+<li>Method</li>
+<li>Analysis</li>
+</ol>
+<p>Importantly, it may be overwhelming to incorporate all of them in your preregistration if you are just getting started in Open Science. That’s fine. Feel free to pick what you think might be most relevant to your study to begin, and, with time and practice, you will get better at deciding what is relevant for your research.</p>
+<section id="level-of-details" class="level3"><h3 class="anchored" data-anchor-id="level-of-details">Level of details</h3>
+<p>A lot of concerns of putting Open Science into practice or doing preregistration are about the possible overload of “extra work”. On the contrary, preregistration should be helping us work in a more efficient manner both in the long run and in short terms. Besides, you have complete control of how much detail you want to include. The more detailed the preregistration is, the more effort you need to put into, and as a result the less work down the road. Here we only propose some of the levels of details that may help you determine how much details you can incorporate in your preregistration (Figure 2). The darker the shade, the more detailed it is (thus more work). Again, you can always incorporate different levels of details in different parts.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-what-to-prereg" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure"><p><img src="prereg2.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1: Levels of detail</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</section></section><section id="how-to-preregister-your-study" class="level2"><h2 class="anchored" data-anchor-id="how-to-preregister-your-study">How to preregister your study</h2>
+<p>There are websites dedicated to Open Science practices. OSF is one and it provide platform and/or template we can use.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">OSF</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Github</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Aspredicted.org</a></li>
+<li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">By hand</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<ul>
+<li>
+<a href="https://osf.io/">OSF</a>
+<ul>
+<li><a href="https://help.osf.io/article/162-start-a-registration#start-a-registration-from-scratch">Start from scratch</a></li>
+<li><a href="https://help.osf.io/article/162-start-a-registration#start-a-registration-from-an-existing-project-or-component-1">Start from an existing OSF project or component</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>Pre registration involves making a plan for your research project before collecting and analyzing data. This plan can be documented and shared on Github, which is a popular web-based hosting service for version control and collaborative software development.</p>
+<p>Here are the steps to set up a pre registration for your research on Github:</p>
+<ol type="1">
+<li>Create a Github account: If you do not already have a Github account, create one by visiting the Github homepage and following the instructions.</li>
+<li>Create a new repository: Once you are logged in to Github, you can create a new repository to store your pre registration documents. Click the “New” button in the top left corner of the screen and follow the prompts to create a new repository.</li>
+<li>Choose a template: Github provides several templates for different types of repositories. You can choose a template that is specifically designed for pre registration documents, such as the Open Science Framework (OSF) Preregistration template.</li>
+<li>Add your pre registration documents: Once you have chosen a template, you can add your pre registration documents to the repository. These documents should include a detailed description of your research question, hypotheses, methods, and analysis plan. You can use Markdown, a lightweight markup language, to format your documents on Github.</li>
+<li>Share your repository: Once your pre registration documents are complete, you can share your repository with other researchers or members of the public. You can do this by sharing the link to your repository or by inviting collaborators to contribute to the project.</li>
+<li>Update your repository: As you collect and analyze data, you may need to update your pre registration documents. You can do this by making changes to your documents on Github and committing the changes to the repository.</li>
+</ol>
+<p>By setting up a preregistration on Github, you can make your research more transparent and reproducible. Other researchers can review your plan and provide feedback, and you can use the repository to document any changes you make to your research plan over time.</p>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<ol type="1">
+<li>One author creates the pre-registration.</li>
+<li>Participating authors are emailed, requesting approval.</li>
+<li>If all approve, it is saved but remains private until an author makes it public; or remains private forever.(Why?)</li>
+<li>Authors may share an anonymous version of the pre-registration with reviewers.</li>
+<li>If made public, the final .pdf (sample) is automatically stored in the web-archive.</li>
+</ol>
+</div>
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<p>Write, timestamp + freeze, and then check yourself</p>
+<p>To set up a pre registration for your research from scratch on paper, you can follow these steps:</p>
+<ol type="1">
+<li>Define your research question and hypotheses: Start by identifying the research question you are trying to answer and any hypotheses you have about the expected results.</li>
+<li>Select your variables and measures: Identify the independent and dependent variables in your study and describe the measures you will use to operationalize these variables.</li>
+<li>Determine your sample size and recruitment strategy: Specify the number of participants you plan to recruit and describe how you will recruit them.</li>
+<li>Outline your research design: Describe the research design you will use to address your research question, such as a between-subjects or within-subjects design.</li>
+<li>Specify your data analysis plan: Describe the statistical analyses you plan to use to test your hypotheses, including any planned exploratory analyses and methods to handle missing data.</li>
+<li>Plan for ethical considerations: Address any ethical considerations in your study, such as obtaining informed consent from participants, ensuring confidentiality and privacy, and handling any potential risks or harms.</li>
+<li>Consider any potential limitations: Anticipate any potential limitations of your study, such as sampling bias or measurement error.</li>
+<li>Write up your pre registration plan: Once you have completed these steps, write up your pre registration plan in a clear and concise manner on paper. Be sure to include all relevant information, such as your research question, hypotheses, variables and measures, sample size and recruitment strategy, research design, data analysis plan, ethical considerations, and potential limitations.</li>
+</ol>
+</div>
+</div>
+</div>
+<p>To read more about preregistration in linguisticis: https://www.degruyter.com/document/doi/10.1515/ling-2019-0048/html?lang=en</p>
+<p>Reference Kathawalla, U. K., Silverstein, P., &amp; Syed, M. (2021). Easing into open science: A guide for graduate students and their advisors. Collabra: Psychology, 7(1)</p>
+<!--
+Just as we previously discussed, one of the primary purposes of preregistration is to distinguish between confirmatory research and exploratory research, therefore it can be the start-point of preregistration. 
+In addition, there are more types of study than the two we just mentioned, and it would be helpful to determine and preregister them before the beginning of the study, as it can be the methodological base for your study. 
+Here type of study does not refer to the branches of linguistic studies or specialized areas of linguistic studies: we use it to categorize the **methodology** and **purpose** of the studies. 
+In Figure 1 we listed some of the common types of study in linguistic research. 
+It is worth mentioning that often one study can fit into multiple types listed in Figure 1.
+-->
+
+
+<!-- -->
+
+</section><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{shao2023,
+  author = {Shao, Jiawei and Gadamsetty, Adrija and Taveras, Katherine},
+  title = {Preregistration},
+  date = {2023-11-21},
+  url = {https://fosil-project.github.io/preregistration/index.html},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-shao2023" class="csl-entry quarto-appendix-citeas" role="listitem">
+Shao, Jiawei, Adrija Gadamsetty, and Katherine Taveras. 2023.
+<span>“Preregistration.”</span> FOSIL. November 21, 2023. <a href="https://fosil-project.github.io/preregistration/index.html">https://fosil-project.github.io/preregistration/index.html</a>.
+</div></div></section></div></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Preregistration"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> </span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">  - name: Jiawei Shao</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">    url: https://span-port.rutgers.edu/people/ph-d-students-tas/graduate-students/129-current-students-phd-in-bilingualismsla/1033-jiawei-shao</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">    affiliation: Rutgers University</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">    affiliation-url: www.rutgers.edu</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">  - name: Adrija Gadamsetty</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">    affiliation: Rutgers University</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">    affiliation-url: www.rutgers.edu</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">  - name: Katherine Taveras</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">    affiliation: Rutgers University</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">    affiliation-url: www.rutgers.edu</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="an">citation:</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">  url: https://fosil-project.github.io/preregistration/index.html</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2023-11-21"</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [open science, reregistration]</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="an">image:</span><span class="co"> "preregistration_wug.png"</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> |</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co">  All about preregistration</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="an">code-fold:</span><span class="co"> show</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="an">code-tools:</span><span class="co"> true</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="an">code-link:</span><span class="co"> true</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: lang-opts</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="co">#| results: 'asis'</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="co"># Source dropdown function</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"scripts"</span>, <span class="st">"01_language_dropdown.R"</span>))</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate button</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="fu">print_list</span>(</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>  <span class="at">butt_text =</span> <span class="st">"Language"</span>, </span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>  <span class="at">dir =</span> <span class="st">"preregistration"</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="fu">## What is preregistration?</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>A preregistration is a timestamped document that includes details about a study, such as research questions, hypotheses, methods, and analytic strategies. </span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>Preregistration differs from other open science practices, such as registered reports and preprints, in that it is written prior to data collection and is not peer reviewed. </span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>The amount of detail included in a preregistration can vary. </span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>In the simplest case, a preregistration can comprise merely a hypothesis or perhaps a brief description of the methods. </span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>On the other extreme, a detailed preregistration can include code, power analyses, participant exclusion criteria, etc., in addition to the information described in the simple case. </span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>In the following sections, we will provide more information about the different components that can be included in a preregistration with a specific focus on how preregistration can benefit linguistic research. </span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>More concretely, we will cover the *who*, *why*, *what*, and *how* for preregistering your study in linguistics.</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="fu">## Who can benefit from preregistration?</span></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>Everybody!</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>Preregistration is an important practice for conducting open science and anyone interested in reducing the likelihood of committing questionable research practices (QRPs) and making their research more transparent should consider using them. </span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>This tutorial focuses specifically on preregistration for researchers in any area of linguistics. </span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="fu">## Why preregister your study?</span></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>Researchers have to make critical choices throughout the process of designing and conducting research. </span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>To give a concrete example, consider a phonotician interested in investigating lexical stress. </span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>In this case, the researcher would likely focus on some acoustic correlates associated with stress, such as pitch, duration, and/or intensity. </span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>Aside from choosing which acoustic correlate(s) to measure, she would also need to specify the domain in which these measurements are taken. </span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>Is it the nucleus of the stressed/unstressed syllables? </span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>Or perhaps the entire syllable? </span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>Where exactly is the measurement taken? </span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>The mid-point, perhaps? </span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>Or maybe an average over the entire syllable?</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>All of these choices can have crucial consequences on downstream analyses. </span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>This type of inherent flexibility is referred to as researcher degrees of freedom. </span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>The purpose of preregisteration is to document all of these critical aspects of the study. </span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>Furthermore, preregistration can deter individuals from QRPs, such as HARKing or p-hacking, by requiring them to explicitly state critical decisions in the research pipeline prior to ever collecting data.</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;aside&gt;</span></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>For more information about QRPs and how they relate to the replicability crisis see <span class="co">[</span><span class="ot">What is open science?</span><span class="co">](https://fosil-project.github.io/posts/what-is-open-science/)</span>.</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/aside&gt;</span></span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>There are many additional benefits to preregistering studies. </span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>Preregistration can serve as proof one is engaging in confirmatory data analysis (as opposed to exploratory data analysis), as it establishes a timeline of decisions made before and after data collection. </span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>Moreover, by including a greater level of detail in the preregistration, the researcher is forced to think about aspects of their study that might typically be left for a later stage, e.g., statistical analyses. </span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>This necessarily requires the researcher to invest more time upfront, but often has the benefit of increasing the likelihood of discovering critical errors in the study design.</span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a><span class="fu">## What should you pregister?</span></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>In short, you can preregister anything that you think warrants being timestamped prior to conducting your study. </span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>What exactly this entails will vary widely depending on your area of linguistics and the type of study you are conducting. </span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a>To illustrate, we'll consider a concrete example. </span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>Let's imagine you are a psycholinguist preparing an experiment using self-paced reading. </span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>You might want to focus on the research questions, hypotheses, and critical details related to the methodology, such as who the participants are, how you plan to recruit them, how many you plan to recruit, etc. </span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a>You also might consider explaining what the critical variables are that you will manipulate with your design, what transformations you plan to perform on the data, and what modeling strategies you will use for statistical inferences. </span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a>All of these decisions, while important, might not be applicaple in every situation. </span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>To summarize, the type of information included in a preregistration will likely be related to one of the following: </span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>RQ/Hypotheses</span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Method</span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Analysis</span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a>Importantly, it may be overwhelming to incorporate all of them in your preregistration if you are just getting started in Open Science. </span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a>That's fine. </span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a>Feel free to pick what you think might be most relevant to your study to begin, and, with time and practice, you will get better at deciding what is relevant for your research. </span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a><span class="fu">### Level of details</span></span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a>A lot of concerns of putting Open Science into practice or doing preregistration are about the possible overload of "extra work". </span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a>On the contrary, preregistration should be helping us work in a more efficient manner both in the long run and in short terms. </span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a>Besides, you have complete control of how much detail you want to include. </span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a>The more detailed the preregistration is, the more effort you need to put into, and as a result the less work down the road. </span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>Here we only propose some of the levels of details that may help you determine how much details you can incorporate in your preregistration (Figure 2). </span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a>The darker the shade, the more detailed it is (thus more work). </span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a>Again, you can always incorporate different levels of details in different parts.</span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-what-to-prereg</span></span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig.cap: Levels of detail</span></span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a><span class="co">#| out.width: 100%</span></span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"prereg2.png"</span>)</span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a><span class="fu">## How to preregister your study</span></span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a>There are websites dedicated to Open Science practices. </span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a>OSF is one and it provide platform and/or template we can use. </span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a>::: {.panel-tabset}</span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a><span class="fu">## OSF</span></span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">OSF</span><span class="co">](https://osf.io/)</span></span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span><span class="co">[</span><span class="ot">Start from scratch</span><span class="co">](https://help.osf.io/article/162-start-a-registration#start-a-registration-from-scratch)</span> </span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span><span class="co">[</span><span class="ot">Start from an existing OSF project or component</span><span class="co">](https://help.osf.io/article/162-start-a-registration#start-a-registration-from-an-existing-project-or-component-1)</span></span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a><span class="fu">## Github</span></span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a>Pre registration involves making a plan for your research project before collecting and analyzing data. This plan can be documented and shared on Github, which is a popular web-based hosting service for version control and collaborative software development. </span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a>Here are the steps to set up a pre registration for your research on Github:</span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Create a Github account: If you do not already have a Github account, create one by visiting the Github homepage and following the instructions.</span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Create a new repository: Once you are logged in to Github, you can create a new repository to store your pre registration documents. Click the "New" button in the top left corner of the screen and follow the prompts to create a new repository.</span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Choose a template: Github provides several templates for different types of repositories. You can choose a template that is specifically designed for pre registration documents, such as the Open Science Framework (OSF) Preregistration template.</span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Add your pre registration documents: Once you have chosen a template, you can add your pre registration documents to the repository. These documents should include a detailed description of your research question, hypotheses, methods, and analysis plan. You can use Markdown, a lightweight markup language, to format your documents on Github.</span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Share your repository: Once your pre registration documents are complete, you can share your repository with other researchers or members of the public. You can do this by sharing the link to your repository or by inviting collaborators to contribute to the project.</span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>Update your repository: As you collect and analyze data, you may need to update your pre registration documents. You can do this by making changes to your documents on Github and committing the changes to the repository.</span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a>By setting up a preregistration on Github, you can make your research more transparent and reproducible. Other researchers can review your plan and provide feedback, and you can use the repository to document any changes you make to your research plan over time.</span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a><span class="fu">## Aspredicted.org </span></span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>One author creates the pre-registration.</span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Participating authors are emailed, requesting approval.</span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>If all approve, it is saved but remains private until an author makes it public; or remains private forever.(Why?)</span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Authors may share an anonymous version of the pre-registration with reviewers.</span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>If made public, the final .pdf (sample) is automatically stored in the web-archive.</span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a><span class="fu">## By hand</span></span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a>Write, timestamp + freeze, and then check yourself </span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a>To set up a pre registration for your research from scratch on paper, you can follow these steps:</span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Define your research question and hypotheses: Start by identifying the research question you are trying to answer and any hypotheses you have about the expected results.</span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Select your variables and measures: Identify the independent and dependent variables in your study and describe the measures you will use to operationalize these variables.</span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Determine your sample size and recruitment strategy: Specify the number of participants you plan to recruit and describe how you will recruit them.</span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Outline your research design: Describe the research design you will use to address your research question, such as a between-subjects or within-subjects design.</span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Specify your data analysis plan: Describe the statistical analyses you plan to use to test your hypotheses, including any planned exploratory analyses and methods to handle missing data.</span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>Plan for ethical considerations: Address any ethical considerations in your study, such as obtaining informed consent from participants, ensuring confidentiality and privacy, and handling any potential risks or harms.</span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a><span class="ss">7. </span>Consider any potential limitations: Anticipate any potential limitations of your study, such as sampling bias or measurement error.</span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a><span class="ss">8. </span>Write up your pre registration plan: Once you have completed these steps, write up your pre registration plan in a clear and concise manner on paper. Be sure to include all relevant information, such as your research question, hypotheses, variables and measures, sample size and recruitment strategy, research design, data analysis plan, ethical considerations, and potential limitations.</span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a>To read more about preregistration in linguisticis:</span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a>https://www.degruyter.com/document/doi/10.1515/ling-2019-0048/html?lang=en</span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a>Reference</span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a>Kathawalla, U. K., Silverstein, P., &amp; Syed, M. (2021). Easing into open science: A guide for graduate students and their advisors. Collabra: Psychology, 7(1)</span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!--</span></span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a><span class="co">Just as we previously discussed, one of the primary purposes of preregistration is to distinguish between confirmatory research and exploratory research, therefore it can be the start-point of preregistration. </span></span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a><span class="co">In addition, there are more types of study than the two we just mentioned, and it would be helpful to determine and preregister them before the beginning of the study, as it can be the methodological base for your study. </span></span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a><span class="co">Here type of study does not refer to the branches of linguistic studies or specialized areas of linguistic studies: we use it to categorize the **methodology** and **purpose** of the studies. </span></span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a><span class="co">In Figure 1 we listed some of the common types of study in linguistic research. </span></span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a><span class="co">It is worth mentioning that often one study can fit into multiple types listed in Figure 1.</span></span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a><span class="co">--&gt;</span></span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-study-types</span></span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig.cap: Need fig cap</span></span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a><span class="co">#| out.width: 100%</span></span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"prereg1.png"</span>)</span>
+<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+</body></html>

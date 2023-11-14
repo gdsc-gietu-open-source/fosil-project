@@ -1,0 +1,31 @@
+---
+title: "About"
+image: ./img/fosil-project.png
+page-layout: full
+citation: false
+about:
+  id: hero-heading
+  template: trestles
+  image-width: 20em
+  image-shape: rectangle
+  links:
+    - icon: twitter
+      text: twitter
+      href: https://twitter.com/fosil_project
+    - icon: github
+      text: Github
+      href: https://github.com/fosil-project
+---
+
+<br>
+The purpose of this site is to help foster open science in linguistics (FOSIL).
+The early 2010's saw the reproducibility crisis take hold of the psychological sciences. 
+As a consequence, there's been a push for increased transparency and reproducible methodology to help mitigate the effects of questionable research practices. 
+The resulting methodological framework and associated techniques, now referred to as open science, have reshaped research methods in psychology and have slowly but surely made their way into adjacent fields, such as linguistics.
+Important considerations often overlooked in the wake of the open science movement deal with (1) how linguists actually learn open science practices and (2) how senior researchers can train the next generation of linguists.
+Few, if any, researchers have had explicit instruction on the practices of open science as part of their professional training.
+Nonetheless, today's speech researcher is expected to be up to date on the current protocols of open science in order incorporate the methodological practices aimed at improving reproducibility/replicability. 
+The FOSIL project aims to make open science practices clear and accessible to people conducting research in the field of linguistics. 
+
+
+

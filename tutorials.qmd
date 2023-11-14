@@ -1,0 +1,21 @@
+---
+title: "Tutorials"
+listing:
+  contents: 
+    - "posts/what-is-open-science/index.qmd"
+    - "posts/reproducible-code-projects/index.qmd"
+    - "posts/positionality-statements/index.qmd"
+    - "posts/registered-reports/index.qmd"
+    - "posts/preprints/index.qmd"
+    - "posts/preregistration/index.qmd"
+    - "posts/literate-programming/index.qmd"
+    - "posts/open-data/index.qmd"
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: true
+  filter-ui: true
+page-layout: full
+title-block-banner: true
+citation: false
+---

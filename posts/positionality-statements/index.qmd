@@ -1,0 +1,104 @@
+---
+title: "Positionality statements"
+author: 
+  - name: Gabriela Constantin-Dureci
+    url: https://span-port.rutgers.edu/people/ph-d-students-tas/graduate-students/129-current-students-phd-in-bilingualismsla/981-constantin-dureci-gabriela
+    affiliation: Rutgers University
+    affiliation-url: www.rutgers.edu
+  - name: Joseph V. Casillas
+    url: https://www.jvcasillas.com
+    affiliation: Rutgers University
+    affiliation-url: www.rutgers.edu
+date: "2023-03-21"
+citation: 
+  url: https://FOSIL-project.github.io/positionality-statements/index.html
+categories: [open science, positionality statements, transparency]
+image: "positionality_statements_wug.png"
+description: |
+  Recognizing the Researcher's Perspective in Linguistic Research
+---
+
+```{r}
+#| label: lang-opts
+#| results: 'asis'
+#| echo: false
+
+# Source dropdown function
+source(here::here("scripts", "01_language_dropdown.R"))
+
+# Generate button
+print_list(
+  butt_text = "Language", 
+  dir = "positionality-statements"
+  )
+```
+
+<br>
+
+A positionality statement is a reflective piece of writing that acknowledges the researcher's stance---or positionality---toward a research topic, framework, and even participants. 
+One's positionality encompasses their social, cultural, and personal identity, as well as their biases and assumptions [@holmes2020researcher], and can influence how research is done and how results are interpreted [@rowe2014]. 
+While positionality statements have been adopted for a while in the social sciences, they are a relatively new incorporation in the field of linguistics, appearing primarily in studies that are of a qualitative nature. 
+We advocate for developing and including positionality statements in linguistic research, as a way of increasing transparency and promoting critical self-reflection in research.
+
+Why is important to consider one's positionality in research and, specifically, in linguistic research? 
+It is essential to consider one's positionality when conducting or engaging in research because it can impact how data is collected, analyzed, and interpreted. 
+Linguistic research, in particular, often deals with social phenomena that are influenced by language use and the cultural context in which it occurs. 
+Recognizing one's positionality in linguistic research is crucial to understanding how it might influence the research process and findings.
+
+Why should positionality statements be included in quantitative research as well?
+Traditionally, positionality statements have been more prevalent in qualitative research; nonetheless, they should be considered equally important in quantitative research. 
+Aside from contributing to ongoing efforts to promote transparency and openness in research practices, recognizing and addressing the researcher's positionality can increase the validity of the findings.
+
+## Things to Consider
+
+Researchers should reflect on their positionality before starting a project and write a positionality statement. 
+When submitting a study for publication, the positionality statement can be included in additional materials if the word limit is a concern. 
+Moreover, in showing their commitment to DEIB (Diversity, Equity, Inclusivity, and Belonging) initiatives, journals have started to encourage authors to include positionality statements with their submissions (see the Journal of Social and Personal Relationships).
+In sum, positionality statements are critical in linguistic research as they promote critical self-reflection, increase transparency, and help address diversity and inclusivity gaps. 
+Including positionality statements in quantitative research can increase the validity of findings. 
+By reflecting on who it is that does the research, linguistics can become a more diverse, inclusive, and transparent field.
+
+
+
+<!--
+### Positionality Statement
+
+**1. What is a positionality statement?**
+
+-  Definition
+
+**2. Why is positionality important in research and, specifically, in linguistic research?**
+
+- Positionality addresses where the researcher is coming from when conducting a particular research;
+
+- Recognizing one’s positionality and writing a positionality statement has traditionally been associated with **qualitative research** and has been more prevalent in subfields of linguistics (e.g., sociolinguistics) or intersecting fields (e.g., anthropology);
+
+- **Quantitative research** has traditionally been viewed as “hard science” and the quantitative researcher as objective, thus there did not seem to be a need for quantitative researchers to reflect on their positionality;
+
+**3. Why should positionality statements be included in quantitative research as well?**
+
+- Good for validity (see Jafar, 2018)
+
+- The medical field and the psychological field is (slowly) seeing efforts around inclusing positionality in quantitative research (see Jamieson et al., 2022)
+
+- It also addresses diversity and inclusivity gaps in research – connection with DEIB initiatives & connection with making research open and transparent (aka we should know _who_ is doing the research)
+
+**4. Steps for the future**
+
+- Consider your own positionality before starting a project;
+
+- Consider writing a positionality statement for your research; it can be included in additional materials if the word limit is a concern for publication;
+
+- Help create a more open and transparent field for research in linguistics by reflecting on who it is that does the research.
+
+**5. Conclusion**
+
+
+NOTES:
+I focused on quantitative vs qualitative because (1) positionality is associated with qualitative projects, and (2) when discussing open practices in research, the conversation can be overtaken by the focus on quantitative materials. However, some qualitative practices would benefit openness and transparency in research.
+
+References:
+Anisa Jafar (2018): _What is positionality and should it be expressed in quantitative studies?_
+Michelle K. Jamieson; Gisela H. Govaart' & Madeleine Pownall (2022): _Reflexivity in Quantitative Research: A Rationale and Beginner’s Guide_
+
+-->

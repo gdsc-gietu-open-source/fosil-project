@@ -1,0 +1,227 @@
+---
+title: "Literate programming"
+author: 
+  - name: Kyle Parrish
+    url: https://kparrish92.github.io/
+    affiliation: Rutgers University
+    affiliation-url: www.rutgers.edu
+  - name: Isabelle Chang
+    affiliation: Rutgers University
+    affiliation-url: www.rutgers.edu
+citation: 
+  url: https://fosil-project.github.io/literate-programming/index.html
+date: "2023-02-20"
+categories: [info, coding, literate programming]
+image: "literate_programming_wug.png"
+description: |
+  Introduction to literate programming.
+code-fold: show
+code-tools: true
+code-link: true
+---
+
+```{r}
+#| label: lang-opts
+#| results: 'asis'
+#| echo: false
+
+# Source dropdown function
+source(here::here("scripts", "01_language_dropdown.R"))
+
+# Generate button
+print_list(
+  butt_text = "Language", 
+  dir = "literate-programming"
+  )
+```
+
+# Overview
+
+Literate programming refers to the integration of code and prose in a reproducible document.
+This practice is not yet mainstream in linguistics, although it holds several advantages as opposed to traditional reporting methods.
+Traditionally, statistical analysis, plots, tables, citations and captions would be created and manually and inserted into a manuscript. 
+One potential issue with this approach is the increased probability of reported errors.
+For example, a recent study found that...(Roettger analysis of Labphon).
+A literate programming approach to manuscript creation would plausibly reduce the quantity of these errors, and it would make the correct information traceable more often. 
+Additionally, updates to the data would be (almost) automatically integrated into a given manuscript if the necssary scripts are run again.
+
+The present tutorial will provide an example of literate programming specifically for linguists by using an open dataset in linguistics and reported a mock analysis
+While the emphasis of this tutorial will be on creating a simple working example in Rmarkdown, it is important to note that literate programming can be applied within R to APA style manuscripts (see the Papaja package), in slideshows (see Xaringan) and in other programs entirely (qmd, python, jupitor notebooks)
+
+# Working example 
+
+Here, we talk through an example of literate programming using open linguistics data.
+In particular, we are using the `durationsGe` dataset in the `languageR` package.
+For our example, we will report differences in the duration of dutch prefix "ge" by speaker sex. 
+
+First, we load our libraries. 
+Both tidyverse and languageR are available on CRAN.
+
+```{r}
+#| label: setup
+#| echo: true 
+#| results: 'hide' 
+#| message: false
+library("languageR")
+library("tidyverse")
+library("brms")
+```
+
+## Reporting descriptive statistics
+
+In general all, inline reporting occurs in Rmardown between backticks, i.e., \` \`. 
+Specifically, you have to wrap the r code with `` `r ` `` to integrate it into your document. 
+For instance, if we want to report the overall mean for the column `DurationOfPrefix`, we can simply put r code such as, `mean(durationsGe$DurationOfPrefix)` between to back ticks like this:
+
+```{=html}
+<div class="sourceCode">
+<pre class="sourceCode markdown">
+<code class="sourceCode markdown">
+The mean duration is &#96;r mean(durationsGe$DurationOfPrefix)&#96;. 
+</code>
+</pre>
+</div>
+```
+
+Which would be rendered as: 
+
+::: border
+The mean duration is 0.1252515
+:::
+
+
+There are several decimal points here, though! 
+We probably don't want that, so if we haven't rounded the data previously, we can do so inline by using the `round` function: 
+
+```{=html}
+<div class="sourceCode">
+<pre class="sourceCode markdown">
+<code class="sourceCode markdown">
+The mean duration was &#96;r round(mean(durationsGe$DurationOfPrefix), digits = 2)&#96;. 
+</code>
+</pre>
+</div>
+```
+
+Now the code is rendered in prose as: 
+
+::: border
+The mean duration was 0.13.
+:::
+
+As you can see, this can get rather long in a hurry. 
+Another option is to use an code chunk to calculate summary statistics and assign them to objects. 
+Then you can simply use the objects with inline chunks. 
+For instance, we likely also want to report how many participants are in our dataset. 
+Let's do this and report it in prose. 
+
+```{r}
+#| label: code-chunk-reporting-example
+mean_duration  <- round(mean(durationsGe$DurationOfPrefix), digits = 2)
+n_participants <- length(unique(durationsGe$Speaker))
+```
+
+```{=html}
+<div class="sourceCode">
+<pre class="sourceCode markdown">
+<code class="sourceCode markdown">
+There were &#96;r n_participants&#96; participants. 
+The mean duration was &#96;r mean_duration&#96;. 
+</code>
+</pre>
+</div>
+```
+
+::: border
+There were 132 participants. The mean duration was 0.13.
+:::
+
+## Reporting results of statistical models
+
+We can also report the output statistical models and tests. 
+Typically, the results of these tests can be stored in an object in R and extracted.
+I will provide an example with a t-test in R.
+First, we will run a t-test to see whether duration varies as a function of speaker sex:
+
+```{r}
+#| label: t-test
+t_test_object <- t.test(DurationOfPrefix ~ Sex, data = durationsGe)
+t_test_object
+```
+
+
+For a t-test, in APA guidelines we report degrees of freedom, the t-value, and the p-value. 
+All of these are actually stored in the object we just created, and we can automate the reporting process.
+
+<aside>
+**Note**: The degree of freedom in this dataset are exaggerated due to the nested structure of the data and this t-test serves as an example only
+</aside>
+
+**Degrees of Freedom** 
+
+```{=html}
+<div class="sourceCode">
+<pre class="sourceCode markdown">
+<code class="sourceCode markdown">
+&#96;r round(t_test_object$parameter, digits = 2)&#96. 
+</code>
+</pre>
+</div>
+```
+
+::: border
+`r round(t_test_object$parameter, digits = 2)`
+:::
+
+**The t-value**
+
+
+```{=html}
+<div class="sourceCode">
+<pre class="sourceCode markdown">
+<code class="sourceCode markdown">
+&#96;r round(t_test_object$statistic, digits = 2)&#96. 
+</code>
+</pre>
+</div>
+```
+
+::: border
+`r round(t_test_object$statistic, digits = 2)`
+:::
+
+**The p-value** 
+
+```{=html}
+<div class="sourceCode">
+<pre class="sourceCode markdown">
+<code class="sourceCode markdown">
+&#96;r round(t_test_object$p.value, digits = 2)&#96. 
+</code>
+</pre>
+</div>
+```
+
+::: border
+`r round(t_test_object$p.value, digits = 2)`
+:::
+
+**All together**
+
+```{=html}
+<div class="sourceCode">
+<pre class="sourceCode markdown">
+<code class="sourceCode markdown">
+t = (&#96;r round(t_test_object$parameter, digits = 2)&#96) =
+&#96;r round(t_test_object$statistic, digits = 2)&#96, p = 
+&#96;r round(t_test_object$p.value, digits = 2)&#96.   
+</code>
+</pre>
+</div>
+```
+
+::: border
+t = (`r round(t_test_object$parameter, digits = 2)`) =
+`r round(t_test_object$statistic, digits = 2)`, p = 
+`r round(t_test_object$p.value, digits = 2)`.   
+:::

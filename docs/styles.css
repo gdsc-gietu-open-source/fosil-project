@@ -1,0 +1,20 @@
+/* css styles */
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
+.nav_wug {
+  font-family: 'Inconsolata', monospace;
+  text-align: center;
+  color: black;
+  font-size: 1.5vw;;
+  line-height: 1;
+}
+
+.nav_wug:hover {
+  font-size: 1.6vw;
+  color: #cc0033;
+}
+
+#nav_wug {
+  vertical-align: middle;
+  padding-top: 10px;
+}

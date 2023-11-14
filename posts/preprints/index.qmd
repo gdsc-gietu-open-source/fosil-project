@@ -1,0 +1,48 @@
+---
+title: "Preprints"
+author: 
+  - name: Joseph V. Casillas
+    url: https://www.jvcasillas.com
+    affiliation: Rutgers University
+    affiliation-url: www.rutgers.edu
+citation: 
+  url: https://FOSIL-project.github.io/preprints/index.html
+date: "2023-03-21"
+categories: [open science, registered reports, transparency]
+image: "preprints_wug.png"
+description: |
+  Why you should consider posting preprints of your linguistic research.
+---
+
+```{r}
+#| label: lang-opts
+#| results: 'asis'
+#| echo: false
+
+# Source dropdown function
+source(here::here("scripts", "01_language_dropdown.R"))
+
+# Generate button
+print_list(
+  butt_text = "Language", 
+  dir = "preprints"
+  )
+```
+
+<br>
+
+In recent years, the concept of open science has gained traction in academic circles. The idea behind open science is to make scientific research and data more accessible, transparent, and reproducible. One of the ways in which open science is being promoted is through the use of pre-prints.
+
+A pre-print is a version of a research article that has not yet undergone peer review but is publicly available online. Pre-prints allow researchers to share their findings with the scientific community and get feedback before their work is published in a traditional academic journal. This process can speed up the dissemination of knowledge and facilitate collaboration between researchers.
+
+Pre-prints have become increasingly popular in recent years, particularly in fields such as biology, physics, and computer science. The adoption of pre-prints has been slower in some fields, such as the social sciences and humanities, but this is changing as more researchers become aware of the benefits of open science.
+
+One of the primary benefits of pre-prints is that they allow researchers to share their findings quickly and easily. This can be especially important in fields where research moves quickly, such as biology or computer science. Pre-prints also allow researchers to receive feedback on their work from their peers, which can help to improve the quality of their research.
+
+Pre-prints also promote transparency and reproducibility in scientific research. By making research findings available to the public before they are peer-reviewed, pre-prints allow others to review and replicate the research. This helps to ensure that the findings are accurate and reliable.
+
+Another benefit of pre-prints is that they can help to reduce publication bias. Publication bias occurs when positive results are more likely to be published than negative results. This can skew the scientific literature and lead to a misunderstanding of the state of the research. Pre-prints can help to reduce publication bias by making all research findings available to the public, regardless of the outcome.
+
+Despite these benefits, some researchers remain hesitant to use pre-prints. One concern is that publishing a pre-print may harm their chances of being published in a traditional academic journal. However, this concern is becoming less relevant as more journals are accepting pre-prints as a legitimate form of publication.
+
+In conclusion, pre-prints play an important role in open science by promoting transparency, reproducibility, and collaboration. While some researchers may still be hesitant to use pre-prints, the benefits of open science are becoming increasingly clear. By embracing pre-prints, researchers can accelerate the dissemination of knowledge, improve the quality of research, and ensure that their findings are available to the widest possible audience.
